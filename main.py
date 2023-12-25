@@ -20,3 +20,12 @@ def speed_conversion(usr_speed):
 #MAIN PROGRAM
 usr_data = usr_input()
 speed_conversion(usr_data)
+
+while True:
+    condn = input("\n\tDo you want to continue using this application (y/n): ")
+    if condn.lower() == "y":
+        usr_data = usr_input()
+        speed_conversion(usr_data)
+    else:
+        print("\n\tTHANK YOU! ")
+        break
